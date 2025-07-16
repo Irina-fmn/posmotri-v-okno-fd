@@ -69,7 +69,6 @@ ol {
 .content__list-container {
   height: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -94,6 +93,7 @@ ol {
 
 .result__video {
   object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
@@ -186,10 +186,6 @@ ol {
   gap: 15px;
 }
 
-.search-form__fieldset {
-  border: none;
-}
-
 .search-form__label {
   display: flex;
   align-items: center;
@@ -218,6 +214,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  border: none;
 }
 
 .search-form__textfield {
@@ -230,6 +227,8 @@ ol {
   color: #fff;
   appearance: none;
   padding: 1px 0;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 225px;
 }
 
 .search-form__textfield::placeholder {
@@ -269,6 +268,8 @@ ol {
   font-weight: 700;
 }
 
+.content__card-link_current,
+.content__card-link:active,
 .button:active {
   background-color: #545050;
 }
@@ -290,11 +291,6 @@ ol {
 
 .content__list-item {
   padding: 0 3px;
-}
-
-.content__card-link_current,
-.content__card-link:active {
-  background-color: #545050;
 }
 
 .content__card-link:hover {
